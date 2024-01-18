@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        #one {
+            background-color:black;
+            height:45vh;
+            width:25vw;
+            position:relative;
+            left:145px;
+        }
+        
+        #two {
+            background-color:red;
+            height:25%;
+            width:60%;
+            border-radius:50%;
+            position:relative;
+            left:22px;
+            top:30px;
+            animation-name:redsignal;
+            animation-duration:1s;
+       animation-timing-function:ease-in; 
+            animation-delay:0;
+      animation-iteration-count:infinite;
+            animation-direction:normal;
+        }
+        
+        #three {
+            background-color:yellow;
+            height:25%;
+            width:60%;
+            border-radius:50%;
+            position:relative;
+            left:22px;
+            top:40px;
+            animation-name:yellowsignal;
+            animation-duration:1s;
+       animation-timing-function:ease-in; 
+            animation-delay:0;
+      animation-iteration-count:infinite;
+            animation-direction:normal;
+        }
+        
+        #four {
+            background-color:green;
+            height:25%;
+            width:60%;
+            border-radius:50%;
+            position:relative;
+            left:22px;
+            top:50px; 
+            animation-name:greensignal;
+            animation-duration:1s;
+       animation-timing-function:ease-in; 
+            animation-delay:0;
+      animation-iteration-count:infinite;
+            animation-direction:normal;
+       } 
+       @keyframes redsignal {
+           from { 
+           background-color:red;
+           }
+           to {
+           background-color:#542a27;
+           }
+       }
+       
+        @keyframes yellowsignal {
+           from { 
+           background-color:yellow;
+           }
+           to {
+           background-color:#505427;
+           }
+       }
+       
+        @keyframes greensignal {
+           from { 
+           background-color:green;
+           }
+           to {
+           background-color:#2e5427;
+           }
+       }                           
+        
+            
+    
+    </style>
+</head>
+<body>
+    <div id="one">
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+    </div>   
+   
+
+
+</body>
+</html>
